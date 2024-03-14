@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(225,220,235,1);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+#logo:hover{
+    filter: invert(5);
+}
+
+.logo img{
+    height: 150px;
+    width: 150px;
+    
+    border-radius: 30px;
+}
+
+.frase{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 10px;
+}
+
+.redes a:hover{
+    background-color: black;
+    color: white;
+}
+
+.degrade{
+    
+    width: 100%;
+    height: 100px;
+}
+
+.page{
+    width: 100%;
+    background: rgb(225,220,235);
+    background: linear-gradient(180deg, rgba(225,220,235,1) 0%, rgba(136,176,203,1) 23%, rgba(105,69,168,1) 74%);
+
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.boas-vindas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    opacity: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    max-width: 800px;
+}
+
+.section{
+    align-self: center;
+}
+
+#showProjects{
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 70%;
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    font-size: 18px;
+}
+
+
