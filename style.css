@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: rgb(225,220,235,1);
-    padding: 0;
-    margin: 0;
-    height: 100vh;
+    background: linear-gradient(180deg, rgba(225,220,235,1) 0%, rgba(136,176,203,1) 30%, rgba(105,69,168,1) 74%);
+    padding: 20px;
+    margin: 0px;
+    min-height: 100vh;
     
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -53,9 +53,28 @@ header{
     gap: 10px;
 }
 
+.redes a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    padding: 3px;
+}
+
 .redes a:hover{
-    background-color: black;
     color: white;
+    opacity: 70%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.redes a:hover #githubbtn{
+    filter: invert();
 }
 
 .degrade{
@@ -66,8 +85,8 @@ header{
 
 .page{
     width: 100%;
-    background: rgb(225,220,235);
-    background: linear-gradient(180deg, rgba(225,220,235,1) 0%, rgba(136,176,203,1) 23%, rgba(105,69,168,1) 74%);
+    height: fit-content;
+    padding: 20px;
 
     
     display: flex;
@@ -97,24 +116,238 @@ header{
     max-width: 800px;
 }
 
-.section{
-    align-self: center;
+.selectCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
 }
 
-#showProjects{
-    width: fit-content;
-    align-self: center;
+.woonttBtn{
+    background-color: #202020;
+    color: white;
+    height: fit-content;
     padding: 10px;
     border-radius: 10px;
+    max-width: 435px;
+    cursor: pointer;
+}
+
+.woonttBtn img {
+    width: 435px;
+}
+
+.regulargameBtn{
     background-color: black;
-    opacity: 70%;
     color: white;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    width: 435px;
+    cursor: pointer;
+}
+
+.regulargameBtn img{
+    width: 435px;
+}
+
+.registrodecompraBtn{
+    background-color: #222e2f;
+    color: white;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    width: 435px;
+    cursor: pointer;
+}
+
+.registrodecompraBtn img {
+    width: 435px;
+}
+
+.navbuttons button{
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+
+    border-color: white;
+
+    cursor: pointer;
 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
-    font-size: 18px;
 }
 
+.navbuttons button:hover{
+    background-color: transparent;
+    color: white;
+}
 
+.woontt, .regulargame, .registrodecompra{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.video-container {
+    width: 820px; 
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    padding-bottom: 56.25%;
+    border-radius: 10px;  
+    margin-top: 10px;
+}
+  
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    width: 820px; 
+    border-radius: 10px;             
+    height: 600px;
+}
+
+@media screen and (max-width: 1510px){
+    .selectCards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #registroiframe{
+        max-width: 600px;
+        align-self: center;
+    }
+
+    .registrodecompra div, .regulargame div, .woontt div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        max-width: 600px;
+    }
+
+    .registrodecompra div span, .regulargame div span, .woontt div span{
+        max-width: 500px;
+    }
+
+    .registrodecompra div a, .regulargame div a, .woontt div a {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 801px){
+    .woontt div, .regulargame div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .woontt div button , .regulargame div button{
+        width: fit-content;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 718px){
+    .frase{
+        display: flex;
+        text-align: center;
+    }
+
+    .redes{
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 619px){
+    .registrodecompra div, .regulargame div, .woontt div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .woontt .video-container{
+        align-self: center;
+    }
+
+    .registrodecompra div span, .regulargame div span, .woontt div span{
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registrodecompra div a, .regulargame div a{
+        width: fit-content;
+    }
+
+    .woontt img {
+        width: 250px;
+    }
+
+    .navbuttons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .registrodecompra, .regulargame, .woontt div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 515px) {
+    .redes{
+        justify-content: center;
+    }
+
+    .selectCards .woonttBtn img {
+        width: 300px;
+    }
+
+    .selectCards .regulargameBtn img {
+        width: 300px;
+    }
+
+    .selectCards .registrodecompraBtn img {
+        width: 300px;
+    }
+
+    .selectCards div {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .regulargame div img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 359px){
+    .frase{
+        display: flex;
+        text-align: left;
+    }
+}
