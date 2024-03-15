@@ -21,7 +21,6 @@ document.querySelector(".woonttBtn").addEventListener("click", function(){
             document.querySelector(classes[i]).style.display = "none"
             document.querySelector(classes[i]).style.visibility = "hidden" 
         }
-        
     }
 })
 
